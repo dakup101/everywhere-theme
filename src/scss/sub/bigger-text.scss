@@ -1,0 +1,11 @@
+.bigger-text {
+	@apply text-center;
+
+	&__title {
+		@apply text-2xl xl:text-4xl font-black mb-2;
+	}
+
+	&__content {
+		@apply text-xl xl:text-3xl;
+	}
+}

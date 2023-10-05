@@ -1,0 +1,42 @@
+.cta {
+	@apply bg-dark py-14 relative overflow-hidden mb-20 z-10 rounded-lg shadow;
+
+	&::after {
+		content: "";
+		@apply w-full h-full absolute top-0 left-0 px-10 py-16;
+		background: radial-gradient(circle at center, #444 0%, transparent 100%);
+		transform-origin: left;
+	}
+
+	&__prefix {
+		@apply text-center text-accent font-semibold relative z-10;
+	}
+
+	&__content {
+		@apply flex flex-col relative z-10 items-center text-center font-bold text-white mt-5;
+		font-size: 140px;
+		span {
+			line-height: 105%;
+		}
+		@media (max-width: 1440px) {
+			font-size: 120px;
+		}
+		@media (max-width: 1280px) {
+			font-size: 86px;
+		}
+		@media (max-width: 991px) {
+			font-size: 64px;
+		}
+		@media (max-width: 648px) {
+			font-size: 46px;
+		}
+		@media (max-width: 500px) {
+			font-size: 38px;
+		}
+	}
+
+	&__arrow {
+		@apply invert w-10 relative z-10 mt-10 block mx-auto;
+		animation: bounceDown 1.5s ease infinite;
+	}
+}

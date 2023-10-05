@@ -1,0 +1,49 @@
+.btn {
+	@apply flex items-center text-center px-7 py-4 rounded-lg w-fit transition-all;
+
+	&--default {
+		@apply bg-dark text-white uppercase hover:shadow-xl;
+		&:hover,
+		&:focus {
+			@apply bg-accent text-dark;
+		}
+		&-white {
+			@apply bg-white text-dark;
+			&:hover,
+			&:focus {
+				@apply bg-accent text-dark;
+			}
+		}
+		&-accent {
+			@apply bg-accent text-dark;
+			&:hover,
+			&:focus {
+				@apply bg-white text-dark;
+			}
+		}
+	}
+
+	&--text {
+		@apply text-dark underline font-bold px-0 py-0;
+		text-underline-offset: 0.3em;
+		text-decoration-thickness: 2px;
+		&:hover,
+		&:focus {
+			@apply text-accent;
+		}
+	}
+
+	svg {
+		@apply shrink-0 ml-3 text-current;
+		width: auto;
+		height: 1.5em;
+		*:not(mask) {
+			[stroke] {
+				@apply stroke-current;
+			}
+			[fill] {
+				@apply fill-current;
+			}
+		}
+	}
+}

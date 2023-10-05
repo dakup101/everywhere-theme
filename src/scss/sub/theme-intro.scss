@@ -1,0 +1,67 @@
+.theme-intro {
+	&__top {
+		@apply text-xs sm:text-lg tracking-wider font-bold uppercase text-center;
+	}
+
+	&__big {
+		@apply font-black flex items-center justify-center mt-5 sm:mt-8;
+		font-size: 120px;
+		span {
+			line-height: 120px;
+			text-align: center;
+		}
+		@media (max-width: 1280px) {
+			font-size: 86px;
+			span {
+				line-height: 86px;
+			}
+		}
+		@media (max-width: 1024px) {
+			font-size: 72px;
+			span {
+				line-height: 72px;
+			}
+		}
+		@media (max-width: 648px) {
+			font-size: 56px;
+			span {
+				line-height: 56px;
+			}
+		}
+		@media (max-width: 468px) {
+			@apply flex-col;
+		}
+	}
+
+	&__logo {
+		@apply w-36 sm:w-44 xl:w-64 ml-10 sm:ml-16 relative;
+		img {
+			@apply w-full;
+		}
+		@media (max-width: 468px) {
+			@apply ml-0 mt-5;
+		}
+	}
+
+	&__hello {
+		@apply text-base md:text-lg font-normal flex justify-center items-center shrink-0 h-10 px-4 bg-accent rounded-lg;
+		transform: rotate(-25deg);
+
+		&--wrap {
+			@apply absolute flex justify-center right-0 bottom-7 h-0 w-0 overflow-visible text-center;
+		}
+	}
+
+	&__moto {
+		@apply flex flex-col text-center items-center text-xl xl:text-2xl;
+	}
+
+	&__arrow {
+		@apply pb-16 relative;
+
+		&--img {
+			@apply absolute w-10 left-1/2 -translate-x-1/2 bottom-0;
+			animation: bounceDownAbsolute 1.5s ease infinite;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.breadcrumbs {
+	@apply text-sm sm:text-base md:text-xl xl:text-2xl;
+	a {
+		@apply opacity-50;
+		&:hover {
+			@apply opacity-100 text-accent;
+		}
+	}
+}

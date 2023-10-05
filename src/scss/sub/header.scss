@@ -1,0 +1,35 @@
+.header {
+	@apply shadow-xl p-2 sm:p-2.5  bg-accent/90  backdrop-blur-sm rounded-lg fixed left-1/2 -translate-x-1/2 bottom-5 z-50;
+
+	& > div {
+		@apply flex justify-center items-center;
+	}
+
+	&--logo {
+		@apply shrink-0 block ml-2 sm:ml-0;
+		width: 50px;
+		height: 50px;
+		img {
+			@apply w-full h-full;
+		}
+	}
+
+	&--menu {
+		@apply mr-2 sm:mr-0 sm:ml-2.5 ml-2 flex rounded bg-dark text-white shrink-0;
+		li {
+			@apply shrink-0;
+		}
+		a {
+			@apply block px-1.5 sm:px-3 md:px-5 py-3.5 rounded w-fit;
+
+			&.active {
+				@apply bg-dark text-accent;
+			}
+
+			&:hover,
+			&:focus {
+				@apply bg-white text-dark;
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.why-us {
+	@apply grid grid-cols-2 lg:grid-cols-4 gap-7 md:gap-10 lg:gap-20;
+	&--item {
+		@apply text-center;
+
+		&__img {
+			@apply block mx-auto h-32 w-auto;
+		}
+	}
+}
