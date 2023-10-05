@@ -5,10 +5,13 @@
 <?php get_header(); ?>
 
 <section class="container mt-8">
-    <?php get_template_part(CMP, "intro-logo", array("with_arrow" => false, "title" => get_the_title())) ?>
+    <?php get_template_part(CMP, "intro-logo", array(
+		"with_arrow" => false, 
+		"title" => get_the_title(),
+		"with_logo" => false,
+		"big" => "Oferta",
+	)) ?>
 </section>
-
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, natus!
 
 <section class="container mt-10">
     <?php get_template_part(CMP, "breadcrumbs") ?>

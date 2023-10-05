@@ -24,7 +24,7 @@
                 </div> -->
             </div>
             <div class="footer--right">
-                <div class="footer--contact text-white">
+                <div class="footer--contact text-white text-left">
                     <div class="text-title mb-5">
                         Kontakt
                     </div>
@@ -35,12 +35,13 @@
                             30-095 Kraków, Polska
                         </p>
                     </div>
-                    <div class="typo opacity-80">
+                    <div class="typo opacity-80 mb-5">
                         <p>
                             telefon: <a href="tel:+48502655457">+48 502 655 457</a><br>
                             mail: <a href="mailto:biuro@everywhere.pl">biuro@everywhere.pl</a>
                         </p>
                     </div>
+					                            <a href="https://fakturownia.pl/ekofakturowanie?link"><img src="https://s3-eu-west-1.amazonaws.com/fs.siteor.com/radgost/files/eko/ekofakturuje4.png" alt="Przejdź na EkoFakturowanie bądź ekologiczny i oszczędzaj na każdej wysłanej fakturze" /></a>
                 </div>
             </div>
         </div>
